@@ -1,0 +1,263 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<link rel="bookmark"  type="image/x-icon"  href="/img/logo_miccall.png"/>
+	 <link rel="shortcut icon" href="/img/logo_miccall.png">
+	
+			
+    <title>
+    Hexo
+    </title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="/css/mic_main.css" />
+    <link rel="stylesheet" href="/css/dropdownMenu.css" />
+    
+    	<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+	
+    <noscript>
+        <link rel="stylesheet" href="/css/noscript.css" />
+    </noscript>
+
+			    <script src="/js/jquery.min.js"></script>
+    <script src="/js/jquery.scrollex.min.js"></script>
+    <script src="/js/jquery.scrolly.min.js"></script>
+    <script src="/js/skel.min.js"></script>
+    <script src="/js/util.js"></script>
+    <script src="/js/main.js"></script>
+	
+</head>
+    
+
+<div id="hexo-helper-live2d">
+  <canvas id="live2dcanvas" width="150" height="300"></canvas>
+</div>
+<style>
+  #live2dcanvas{
+    position: fixed;
+    width: 150px;
+    height: 300px;
+    opacity:1;
+    right: 0px;
+    z-index: 999;
+    pointer-events: none;
+    bottom: -20px;
+  }
+</style>
+<script type="text/javascript" src="/live2d/device.min.js"></script>
+<script type="text/javascript">
+const loadScript = function loadScript(c,b){var a=document.createElement("script");a.type="text/javascript";"undefined"!=typeof b&&(a.readyState?a.onreadystatechange=function(){if("loaded"==a.readyState||"complete"==a.readyState)a.onreadystatechange=null,b()}:a.onload=function(){b()});a.src=c;document.body.appendChild(a)};
+(function(){
+  if((typeof(device) != 'undefined') && (device.mobile())){
+    document.getElementById("live2dcanvas").style.width = '75px';
+    document.getElementById("live2dcanvas").style.height = '150px';
+  }else
+    if (typeof(device) === 'undefined') console.error('Cannot find current-device script.');
+  loadScript("/live2d/script.js", function(){loadlive2d("live2dcanvas", "/live2d/assets/tororo.model.json", 0.5);});
+})();
+</script>
+
+		
+<!-- Layouts -->
+
+
+
+<!--  代码渲染  -->
+<link rel="stylesheet" href="/css/prism_coy.css" />
+<link rel="stylesheet" href="/css/typo.css" />
+<!-- 文章页 -->
+<body class="is-loading">
+    <!-- Wrapper 外包 s-->
+    <div id="wrapper" class="fade-in">
+        <!-- Intro 头部显示 s -->
+        <!-- Intro 头部显示 e -->
+        <!-- Header 头部logo start -->
+        <header id="header">
+    <a href="/" class="logo">MICCALL</a>
+</header>
+        <!-- Nav 导航条 start -->
+        <nav id="nav" class="special" >
+            <ul class="menu links" >
+			<!-- Homepage  主页  --> 
+			<li >
+	            <a href="/" rel="nofollow">主页</a>
+	        </li>
+			<!-- categories_name  分类   --> 
+	        
+	        <li class="active">
+	            <a href="#s1">分类</a>
+	                    <ul class="submenu">
+	                        <li>
+	                        
+	                    </ul>
+	        </li>
+	        
+	        <!-- archives  归档   --> 
+	        
+	        
+		        <!-- Pages 自定义   -->
+		        
+		        <li>
+		            <a href="/about/" title="简历">
+		                简历
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/group/" title="团队">
+		                团队
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/gallery/" title="图库">
+		                图库
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/tag/" title="标签">
+		                标签
+		            </a>
+		        </li>
+		        
+
+
+            </ul>
+            <!-- icons 图标   -->
+			<ul class="icons">
+		            
+		                <li><a href="https://github.com/miccall" class="icon fa-github"><span class="label">GitHub</span></a></li>
+		            
+		            
+		            
+		            
+			</ul>
+</nav>
+
+        <div id="main" >
+            <div class ="post_page_title_img" style="height: 25rem;background-image: url();background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;overflow:hidden;" >
+                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2 >1</h2></a>
+            </div>
+            <!-- Post -->
+            <div class="typo" style="padding: 3rem;">
+                <h1 id="构造函数："><a href="#构造函数：" class="headerlink" title="构造函数："></a>构造函数：</h1><p>原型：在构造函数的原型上面挂载属性和方法；可以让每一个构造函数的实例来调用；<br>书写：原型.属性；<br>例:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">function fn(name,age)&#123;</span><br><span class="line">	this.name = name;</span><br><span class="line">	this.age = age;</span><br><span class="line">&#125;</span><br><span class="line">//相同的属性和方法挂在原型上，表现形式和调用的方法不变；</span><br><span class="line">fn.prototype.class = &quot;四组&quot;;</span><br><span class="line">var a = new fn(&quot;张三&quot;,18);</span><br><span class="line">a.class;//就可以调用；</span><br></pre></td></tr></table></figure></p>
+<h1 id="json："><a href="#json：" class="headerlink" title="json："></a>json：</h1><p>轻量级的数据交换格式，主要用于跟服务器进行交换数据；(json对象)；<br>书写方式：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">var myJson = &#123;</span><br><span class="line">	&quot;name&quot;:&quot;张三&quot;</span><br><span class="line">&#125;</span><br><span class="line">console.log(myJson.name);//张三</span><br><span class="line">json格式的字符串：var a = &quot;&#123;&#125;&quot;;</span><br></pre></td></tr></table></figure></p>
+<p>把json的对象转换为字符串：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">var myJsonStr = JSON.stringify(myJson);</span><br><span class="line"></span><br><span class="line">console.log(myJsonStr); // &#123;&quot;name&quot;:&quot;张三&quot;&#125;;</span><br><span class="line"></span><br><span class="line">console.log(typeof myJsonStr); // string;</span><br><span class="line">把json字符串转换为json对象：</span><br><span class="line"></span><br><span class="line">var myJson1 = JSON.parse(myJsonStr);</span><br><span class="line"></span><br><span class="line">console.log(myJson1); // &#123;&quot;name&quot;:&quot;张三&quot;&#125;;</span><br><span class="line"></span><br><span class="line">console.log(typeof myJson1); // object;</span><br></pre></td></tr></table></figure></p>
+<h1 id="拷贝分为两种："><a href="#拷贝分为两种：" class="headerlink" title="拷贝分为两种："></a>拷贝分为两种：</h1><ol>
+<li>浅拷贝：<br>对象用for in循环；数组用for循环；<br>例:<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">var a = &#123;</span><br><span class="line">	name:&quot;张三&quot;,</span><br><span class="line">	age:18,</span><br><span class="line">	sex:&quot;男&quot;</span><br><span class="line">&#125;</span><br><span class="line">var b = &#123;&#125;;</span><br><span class="line">for(var x in a)&#123;</span><br><span class="line">	b[x] = a[x];</span><br><span class="line">&#125;</span><br><span class="line">console.log(b==a); // false;</span><br><span class="line">console.log(b===a); // false; // 全等：值、数据类型、地址；</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>封装一个浅拷贝方法:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line">//如果用户输入的不是一个对象，我们把用户输入的东西返回去；</span><br><span class="line">//如果用户输入的是一个对象：</span><br><span class="line">判断：</span><br><span class="line">          数组：拷贝数组，返回回去一个新的数组；</span><br><span class="line">          对象：拷贝对象，返回回去一个新的数组；</span><br><span class="line">var obj = &#123;</span><br><span class="line">    name:&quot;张三&quot;,</span><br><span class="line">    age:18,</span><br><span class="line">    sc:&#123;</span><br><span class="line">	    height:180,</span><br><span class="line">	    weight:&quot;50kg&quot;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">//clone函数有一个参数：你要拷贝的对象；</span><br><span class="line"></span><br><span class="line">function clone(a)&#123;</span><br><span class="line">    if(typeof a == &quot;Object&quot;)&#123;</span><br><span class="line">	    if(a instanceof Array)&#123; // obj是Array的一个实例；</span><br><span class="line">		    var arr = [];</span><br><span class="line">		    for(var i = 0;i &lt; arr.length;i++)&#123;</span><br><span class="line">			    arr[i] = a[i];</span><br><span class="line">		    &#125;</span><br><span class="line">	        return arr;</span><br><span class="line">		    &#125;else&#123;</span><br><span class="line">			    var obj = &#123;&#125;;</span><br><span class="line">			    for(var x in a)&#123;</span><br><span class="line">				    obj[x] = a [x];</span><br><span class="line">			    &#125;</span><br><span class="line">			    return obj;</span><br><span class="line">			&#125;</span><br><span class="line">	    &#125;else&#123;</span><br><span class="line">		    return a;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">	var obj1 = clone(obj);</span><br><span class="line">	console.log(obj1);</span><br></pre></td></tr></table></figure></p>
+<ol>
+<li>深拷贝：<br>封装一个深拷贝方法:  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">//递归：自己调用自己；obj[x] = clone(a[x]);</span><br><span class="line">        //方法：</span><br><span class="line">        function clone(a) &#123;</span><br><span class="line">            if (typeof a == &quot;Object&quot;) &#123;</span><br><span class="line">                if (a instanceof Array) &#123; // obj是Array的一个实例；</span><br><span class="line">                    var arr = [];</span><br><span class="line">                    for (var i = 0; i &lt; a.length; i++) &#123;</span><br><span class="line">                        arr[i] = clone(a[i]);</span><br><span class="line">                    &#125;x</span><br><span class="line">                    return arr;</span><br><span class="line">                &#125; else &#123;</span><br><span class="line">                    var obj = &#123;&#125;;</span><br><span class="line">                    for (var x in a) &#123;</span><br><span class="line">                        obj[x] = clone(a[x]);</span><br><span class="line">                    &#125;</span><br><span class="line">                    return obj;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125; else &#123;</span><br><span class="line">                return a;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        var obj1 = clone(obj);</span><br><span class="line">        console.log(obj1);</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>深拷贝跟浅拷贝的区别：简单来说，浅拷贝只复制一层对象的属性，而深拷贝则递归复制了所有层级。  </p>
+
+            </div>
+
+            <!-- Post Comments -->
+            
+    <!-- 使用 DISQUS_CLICK -->
+<div id="disqus-comment">
+    <div id="disqus_thread"></div>
+
+<!-- add animation -->
+<style>
+	.disqus_click_btn {
+            line-height: 30px;
+            margin: 0;
+            min-width: 50px;
+            padding: 0 14px;
+            display: inline-block;
+            font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 0;
+            overflow: hidden;
+            will-change: box-shadow;
+            transition: box-shadow .2s cubic-bezier(.4, 0, 1, 1), background-color .2s cubic-bezier(.4, 0, .2, 1), color .2s cubic-bezier(.4, 0, .2, 1);
+            outline: 0;
+            cursor: pointer;
+            text-decoration: none;
+            text-align: center;
+            vertical-align: middle;
+            border: 0;
+            background: rgba(158, 158, 158, .2);
+            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+            color: #fff;
+            background-color: #7EC0EE;
+            text-shadow: 0
+        }
+</style>
+	
+<div class="btn_click_load" id="disqus_bt"> 
+    <button class="disqus_click_btn">点击查看评论</button>
+</div>
+
+<!--
+<script type="text/javascript">
+$('.btn_click_load').click(function() {
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'http-miccall-tech'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+
+    document.getElementById('disqus_bt').style.display = "none";
+});
+</script>
+-->
+<script type="text/javascript">
+    var disqus_config = function () {
+        this.page.url = 'http://yoursite.com/2017/12/15/构造函数&amp;拷贝/';  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = 'http://yoursite.com/2017/12/15/构造函数&amp;拷贝/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+</script>
+
+<script type="text/javascript">
+    $('.btn_click_load').click(function() {  //click to load comments
+        (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document;
+            var s = d.createElement('script');
+            s.src = '//http-miccall-tech.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', + new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+        $('.btn_click_load').css('display','none');
+    });
+</script>
+</div>
+<style>
+    #disqus-comment{
+        background-color: #eee;
+        padding: 2pc;
+    }
+</style>
+
+
+        </div>
+        <!-- Copyright 版权 start -->
+                <div id="copyright">
+            <ul>
+                <li>&copy;Powered By <a href="https://hexo.io/zh-cn/" style="border-bottom: none;">hexo</a></li>
+                <li>Design: <a href="http://miccall.tech " style="border-bottom: none;">miccall</a></li>
+            </ul>
+            
+            	<span id="busuanzi_container_site_pv">2017总访问量<span id="busuanzi_value_site_pv"></span>次</span>
+			
+        </div>
+    </div>
+</body>
+
+
+
+ 	
+</html>
