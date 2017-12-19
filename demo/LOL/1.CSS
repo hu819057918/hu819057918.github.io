@@ -1,0 +1,1020 @@
+/*通配符*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*清除UL点*/
+
+ul {
+    list-style: none;
+}
+
+/*清除下划线*/
+
+a {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+/*TOP部分*/
+
+#header {
+    width: 100%;
+    height: 840px;
+    background: url(big-top.jpg) no-repeat;
+    background-position: 50% 90px;
+    transition-property: background,height;
+    transition-duration: .8s;
+    transition-timing-function: linear;
+    /*
+    height: 440px;
+    background: url(small-top.jpg) no-repeat;
+    background-position: 50% 90px;
+*/
+    /*
+    height: 840px;
+    overflow: hidden;
+    background: url(big-top.jpg) no-repeat center 90px;
+*/
+}
+
+/*
+#header:hover{
+    height: 440px;
+    background: url(small-top.jpg) no-repeat;
+    background-position: 50% 90px;
+}
+*/
+
+#top {
+    width: 100%;
+    height: 90px;
+    background: #0b0b0b;
+}
+
+#top_top {
+    width: 1240px;
+    height: 90px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 99;
+}
+/*TOP部分  over*/
+/*LOGO部分*/
+
+#logo {
+    width: 190px;
+    height: 100px;
+    background: url(spr-v2.png);
+    background-position: 0px -27px;
+}
+
+#logo > a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-indent: -9999em;
+    overflow: hidden;
+
+}
+/*LOGO部分  over*/
+/*导航部分*/
+
+#nav {
+    width: 600px;
+    height: 90px;
+    margin-left: 200px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    float: left;
+}
+/*导航部分  over*/
+/*大导航*/
+
+#nav > li {
+    width: 120px;
+    height: 90px;
+    float: left;
+}
+
+#nav > li > a {
+    display: block;
+    width: 120px;
+    color: #fafafa;
+    font-size: 18px;
+    padding-top: 30px;
+    text-align: center;
+}
+
+#nav > li > a > span {
+    display: block;
+    width: 120px;
+    color: #838383;
+    font-size: 10px;
+}
+/*大导航  over*/
+/*导航衍生部分*/
+
+#sub_nav {
+    width: 100%;
+    height: 190px;
+    padding: 20px 0;
+    position: absolute;
+    top: 88px;
+    left: 0;
+    background: #000;
+    background: rgba(0, 0, 0, 0.7);
+    display: none;
+}
+/*导航衍生部分  over*/
+/*衍生正式部分*/
+
+#sub_nav_inner {
+    width: 1040px;
+    height: 190px;
+    padding-left: 200px;
+    margin: 0 auto;
+}
+
+#sub_nav_inner > li {
+    width: 120px;
+    float: left;
+}
+
+.sub_nav_a {
+    display: block;
+    width: 120px;
+    height: 28px;
+    line-height: 28px;
+    color: #e1e1e1;
+    font-size: 14px;
+    text-align: center;
+}
+
+.sub_nav_a:hover {
+    color: #e9c06c;
+}
+
+.hot {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background: url(spr-v2.png);
+    background-position: -107px 0;
+}
+
+.new {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background: url(spr-v2.png);
+    background-position: -129px 0;
+}
+/*衍生正式部分  over*/
+/*搜索框*/
+
+#sousuo {
+    position: absolute;
+    top: 0;
+    left: 800px;
+    width: 40px;
+    height: 90px;
+    margin-left: 5px;
+}
+
+#sousuo > i {
+    display: block;
+    width: 27px;
+    height: 27px;
+    background: url(spr-v2.png);
+    background-position: -8px 0px;
+    margin-top: 25px;
+    margin-left: 6px;
+}
+/*搜索框  over*/
+/*top_app部分*/
+
+#top_app {
+    position: absolute;
+    top: 0;
+    left: 850px;
+    width: 40px;
+    height: 90px;
+    margin-left: 5px;
+}
+
+#top_app > i {
+    display: block;
+    width: 21px;
+    height: 27px;
+    background: url(spr-v2.png);
+    background-position: -45px 0px;
+    margin-top: 25px;
+    margin-left: 9px;
+}
+/*top_app部分  over*/
+/*用户登陆部分*/
+
+#top_use_info {
+    position: absolute;
+    top: 0;
+    left: 900px;
+    width: 350px;
+    height: 90px;
+}
+
+#top_use1 {
+    width: 100px;
+    height: 90px;
+    float: left;
+    position: relative;
+}
+
+#top_use1 > span {
+    position: absolute;
+    left: 13px;
+    top: 8px;
+    z-index: 2;
+    width: 74px;
+    height: 74px;
+    background: url(spr-v2.png);
+    background-position: 0 -169px;
+}
+
+#top_use1 > img {
+    position: absolute;
+    top: 12px;
+    left: 17px;
+    width: 66px;
+    height: 66px;
+    border-radius: 33px;
+}
+
+#top_use2 {
+    width: 240px;
+    height: 48.4px;
+    float: left;
+    padding-top: 18px;
+}
+
+#top_use2_one {
+    color: #fff;
+    padding: 5px 0;
+}
+
+#top_use2_one > a {
+    color: #dfb257;
+    text-decoration: underline;
+}
+
+#top_use2_two {
+    color: #999;
+    font-size: 12px;
+}
+/*用户登陆部分  over*/
+/*top_act部分*/
+
+#top_act {
+    width: 1240px;
+    height: 635px;
+    padding-top: 115px;
+    margin: 0 auto;
+}
+
+#top_act_version {
+    width: 315px;
+    height: 26px;
+    color: #888787;
+}
+
+#top_act_link {
+    display: block;
+    width: 390px;
+    height: 60px;
+    margin-top: 512px;
+    margin-left: 423px;
+}
+
+.banben1 {
+    font-size: 14px;
+    color: #888787;
+}
+
+.banben2 {
+    font-size: 14px;
+    color: #f5d185;
+    margin-right: 10px;
+}
+
+#top_act_link > a {
+    display: inline-block;
+    height: 22px;
+    border: 2px solid #f5d185;
+    background: rgba(0, 0, 0, 0.65);
+    font-size: 12px;
+    color: #f5d185;
+}
+/*top_act部分  over*/
+/*中间菜单部分*/
+
+#menu {
+    width: 100%;
+    height: 80px;
+    border-top: 2px solid #8c6c2d;
+    background: url(spr-v2.png);
+    background-position: 0 -256px;
+}
+#menu_inner {
+    width: 1240px;
+    height: 60px;
+    margin: 0 auto;
+}
+
+#menu_inner > li {
+    width: 110px;
+    height: 58px;
+    float: left;
+    text-align: center;
+}
+
+#menu_inner > li > a {
+    font-size: 20px;
+    color: #555;
+    line-height: 52px;
+}
+
+#menu_inner .dot {
+    width: 13px;
+    height: 50px;
+    margin: 4px 18px;
+    border-bottom: 2px solid #fff;
+}
+/*中间菜单部分  over*/
+/*正文部分*/
+
+#content {
+    width: 100%;
+    height: 1628px;
+    margin-top: -20px;
+    padding-top: 40px;
+    background: url(bg-content-top.jpg) no-repeat center top;
+}
+
+#content_inner {
+    width: 100%;
+    height: 1628px;
+    background: url(bg-content-bottom.jpg) no-repeat center bottom;
+}
+
+#layout {
+    width: 1240px;
+    height: 1628px;
+    margin: 0 auto;
+}
+
+#home_side {
+    width: 1240px;
+    height: 1628px;
+}
+/*正文部分  over*/
+/*资讯中心*/
+
+#home_side1 {
+    width: 1240px;
+    height: 1628px;
+}
+/*资讯中心  over*/
+/*轮播*/
+
+#promo {
+    width: 820px;
+    height: 400px;
+    margin-right: 20px;
+    margin-bottom: 60px;
+    position: relative;
+    overflow: hidden;
+    float: left;
+}
+
+#pic_one {
+    width: 4100px;
+    height: 350px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all .2s;
+}
+
+#pic_one > li {
+    width: 820px;
+    height: 350px;
+    float: left;
+}
+
+#pic_one > li > a {
+    display: block;
+    width: 820px;
+    height: 350px;
+}
+
+#pic_two {
+    width: 820px;
+    height: 50px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+#pic_two > li {
+    width: 164px;
+    height: 50px;
+    float: left;
+    background: #121112;
+    color: #666;
+    font-size: 14px;
+    text-align: center;
+    line-height: 50px;
+}
+
+.pic_two1 {
+    cursor: pointer;
+}
+/*轮播  over*/
+
+/*轮播图侧栏*/
+
+#said_nav {
+    width: 400px;
+    height: 400px;
+    float: left;
+}
+
+#side_download {
+    width: 400px;
+    height: 150px;
+    margin-bottom: 10px;
+    background: url(bg-download.jpg) no-repeat;
+}
+
+#side_download > a {
+    display: block;
+    width: 400px;
+    height: 150px;
+}
+
+#side_menu {
+    width: 405px;
+}
+
+#side_menu > li {
+    width: 130px;
+    height: 55px;
+    margin: 5px 0 0 5px;
+    float: left;
+}
+
+#side_menu > li > a {
+    display: block;
+    width: 130px;
+    height: 55px;
+    line-height: 55px;
+    background: #fff;
+    text-align: center;
+    font-size: 14px;
+    color: #555555;
+}
+/*轮播图侧栏  over*/
+/*当鼠标移动到a的时候改变a的背景颜色*/
+#side_menu > li > a:hover {
+    background: #f0f0f0;
+}
+.side_menu_one {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+}
+/*当鼠标移动到a的时候改变a的背景颜色  over*/
+/*新闻公告*/
+#home_mod_news{
+    width: 820px;
+    height: 715px;
+    margin: 0 20px 60px 0;
+    float: left;
+}
+#news_top{
+    width: 820px;
+    height: 53px;
+    border-bottom: 3px solid #ededee; 
+}
+#news_top > h3{
+    float: left;
+    font-size: 26px;
+    line-height: 50px;
+    color: #404040;
+    margin-right: 40px;
+    font-weight: normal;
+}
+#news_tab{
+    float: left;
+    margin-top: 14px;
+    position: relative;
+    height: 36px;
+}
+.news_tab_l{
+    width: 168px;
+    height: 36px;
+    font-size: 18px;
+    float: left;
+    line-height: 36px;
+    overflow: hidden;
+/*当鼠标移动上去变成手样式*/
+    cursor: pointer;
+    color: #666666;
+    text-align: center;
+}
+/*新闻公告  over*/
+/*新闻正文部分*/
+#news_list{
+    width: 820px;
+    height: 578px;
+    padding: 24px 0 0;
+    float: left;
+}
+.news_content{
+    width: 820    px;
+    height: 578px;
+    
+}
+.first{
+    width: 820px;
+    height: 124px;
+    margin-bottom: 24px;
+}
+.first > a >img{
+    float: left;
+    margin-right: 20px;
+}
+.news_item{
+    width: 820px;
+    height: 35px;
+    padding: 4px 0;
+    position: relative;
+    line-height: 35px;
+}
+.news_item > a{
+    display: block;
+    position: relative;
+    height: 35px;
+    line-height: 35px;
+    padding: 0 55px 0 90px;
+    overflow: hidden;
+    font-size: 16px;
+    color: #555555
+}
+.firstS1{
+    display: block;
+    font-size: 36px;
+    font-weight: bold;
+    color: #3e3e3e;
+    line-height: 50px;
+    width: 600px;
+    height: 50px;
+    overflow: hidden;
+    float: left;
+}
+.firstS2{
+    display: block;
+    width: 600px;
+    height: 60px;
+    overflow: hidden;
+    font-size: 14px;
+    color: #898989;
+    line-height: 1.5;
+    float: left;
+}
+.f_news_type{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 68px;
+    height: 35px;
+    line-height: 35px;
+    background: #ebebeb;
+    text-align: center;
+    color: #7a7a7a;
+}
+.news_item .date{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50px;
+    height: 35px;
+    line-height: 35px;
+    text-align: right;
+    color: #bababa;
+}
+/*新闻正文部分  over*/
+/*当鼠标移动到时改变。。。。*/
+.news_item > a:hover .f_news_type{
+    color: #fff;
+    background: #d1ab57;
+}
+.news_item > a:hover {
+    color: #d1ab57;
+}
+#news_more{
+    display: block;
+    width: 820px;
+    height: 45px;
+    margin-top: 15px;
+    line-height: 45px;
+    background: #f0f0f0;
+    color: #515151;
+    font-size: 16px;
+    text-align: center;
+    float: left;
+}d
+#news_more:hover{
+    background: #dad8d8;
+}
+#news_more em{
+    color: #d1ab57;
+    font-style: normal;    
+}
+/*当鼠标移动到时改变。。。。  over*/
+/*英雄、皮肤部分*/
+#home-mod_hero{
+    float: left;
+    height: 695px;
+    width: 400px;
+    margin-bottom: 50px;
+}
+#hd{
+    margin-bottom: 15px;
+    position: relative;
+    width: 400px;
+    height: 53px;
+    border-bottom: 3px solid #ededee;
+}
+#J_heroTab{
+    float: left;
+    margin-top: 14px;
+    position: relative;
+    height: 36px;
+}
+#J_heroTab > li{
+    float: left;
+    width: 133.333333px;
+    height: 36px;
+    line-height: 36px;
+    cursor: pointer;
+    color: #666666;
+    font-size: 16px;
+    text-align: center;
+}
+#bd{
+    min-height: 420px
+}   
+.hero_picture{
+    position: absolute;
+    width: 410px;
+    height: auto;
+    overflow: hidden;
+    z-index: 8;
+}
+#hero_picture_list{
+    height: auto;
+    overflow: hidden;
+}
+#hero_picture_list > a{
+    float: left;
+    position: relative;
+    width: 195px;
+    height: 70px;
+    overflow: hidden;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+#free_bottom{
+    width: 400px;
+    height: 19px;
+    overflow: hidden;
+    zoom: 1;
+    padding-bottom: 5px;
+}
+#free_bottom1{
+    float: left;
+    height: 15px;
+    padding: 0 15px;
+    background: #d1ab57;
+    cursor: pointer;
+}    
+#free_bottom1 > i{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background: url(spr-v2.png) no-repeat;
+    background-position: -678px -80px;
+}
+#free_bottom2{
+    float: right;
+    color: #9F9F9F;
+}
+#bottom_go{
+    width: 400px;
+    height: 70px;
+    margin: 42px 0 20px;
+}
+#bottom_go .go-qt{
+    float: left;
+    width: 195px;
+    height: 70px;
+}
+#bottom_go .go-mall{
+    float: right;
+    width: 195px;
+    height: 70px;
+}
+#side_18{
+    width: 320px;
+    height: 70px;
+    padding: 5px 0 0 80px;
+    position: relative;
+}
+#side_18 > i{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 70px;
+    height: 70px;
+    background: url(spr-v2.png) no-repeat;
+    background-position: -330px -89px;
+}
+#side_18 > h5{
+    color: #404040;
+    font-size: 14px;
+    font-weight: normal
+}
+#side_18 > p{
+    display: block;
+    font-size: 12px;
+    color: #878787;
+}
+/*英雄、皮肤部分  over*/
+#home_mod_recommend{
+    width: 1240px;
+    height: 323px;
+    margin-bottom: 50px;
+    float: left;
+}
+#recommend_top{
+    width: 100%;
+    height: 50px;
+    border-bottom: 3px solid #ededee;
+    margin-bottom: 20px;
+}
+#recommend_top > h3{
+    float: left;
+    font-size: 26px;
+    line-height: 50px;
+    color: #404040;
+    margin-right: 40px;
+    font-weight: normal;
+}
+#recommend_top > ul{
+    float: left;
+    margin-top: 14px;
+    position: relative;
+    height: 36px;
+}
+#recommend_top > ul >li{
+    width: 150px;
+    float: left;
+    height: 36px;
+    line-height: 36px;
+    overflow: hidden;
+    cursor: pointer;
+    color: #666666;
+    font-size: 16px;
+    text-align: center;
+}
+#recommend_content{
+    width: 100%;
+    height: 250px;
+}
+.recommend_content1{
+    width: 100%;
+    height: 250px;
+}
+.recommend_content1 > .recommend_content1U{
+    width: 1260px;
+    height: 190px;
+    padding: absolute;
+}
+.recommend_content1 > .recommend_content1U > li{
+    width: 190px;
+    height: 155px;
+    margin: 0 20px 20px 0;
+    position: relative;
+    float: left;
+}
+.recommend_content1 > .recommend_content1U > li >.pv_lnk{
+    width: 190px;
+    height: 155px;
+    display: block;
+    color: #555;
+    position: relative;
+}
+.pv_lnk > img{
+    width: 190px;
+    height: 110px;
+    display: block;
+    margin-bottom: 5px;
+}
+.pv_lnk1{
+    width: 100%;
+    height: 110px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    background: rgba(0,0,0,0.3);
+}
+.pv_lnk2{
+    position: absolute;
+    width: 65px;
+    height: 65px;
+    left: 60px;
+    top: 20px;
+    display: none;
+    background: url(http://ossweb-img.qq.com/images/lol/web201310/video/bg-icon-v.png) no-repeat 0 0;
+}
+.show1{
+    text-align: right;
+    line-height: 30px;
+    position: absolute;
+    left: 0;
+    bottom: 45px;
+    display: block;
+    width: 100%;
+    height: 20%;
+    background: rgba(0,0,0,0.5);
+}
+.show1 > i{
+    padding-right: 5px;
+    font-style: normal;
+    color: #ddd;
+}   
+.pv_lnk:hover .pv_lnk1{
+    display: block;
+}
+.pv_lnk:hover .pv_lnk2{
+    display: block;
+}
+.pv_lnk:hover h5{
+    color: #c49f58;
+}
+.pv_lnk > h5{
+    font-weight: normal;
+    line-height: 20px;
+    height: 40px;
+    overflow: hidden;
+    font-size: 14px;
+}
+#recommend_more{
+    display: block;
+    width: 100%;
+    height: 45px;
+    margin-top: 15px;
+    line-height: 45px;
+    background: #f0f0f0;
+    color: #515151;
+    font-size: 16px;
+    text-align: center;
+}     
+#recommend_more > em{
+    font-style: normal;
+    color: #d1ab57;
+}
+#recommend_more:hover{
+    background: #dad8d8;
+}
+.recommend_content1L{
+    margin-right: -11.3333px;
+    position: absolute;
+}
+.recommend_content1L > li{
+    width: 300px;
+    height: 240px;
+    margin: 0 13.333333px 0 0;
+    float: left;
+        box-shadow: 0 3px 6px rgba(0,0,0,.15);
+}
+.recommend_content1L > li > a{
+    width: 100%;
+    height: 130px;
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+.recommend_content1L > li > a > img{
+    display: block;
+    width: 100%;
+    height: 130px;
+}
+.act_num{
+    width: 100%;
+    height: 26px;
+    line-height: 26px;
+    color: #f8f8f8;
+    font-size: 12px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+}
+.act_num .act_num_s{
+    color: #f3ca6f;
+    margin: 0 4px;
+    font-weight: normal;
+}
+.act_times{
+    height: 22px;
+    line-height: 22px;
+    padding: 0 8px;
+    border-radius: 11px;
+    font-size: 12px;
+    top: -120px;
+    z-index: 2;
+    right: 11px;
+    color: #fff;  
+    position: absolute;
+    top: 5px;
+    right: 5px;    
+    background: #72ca2a;
+}
+
+.recommend_content1L > li > .act-innr{
+    padding: 11px 15px 0;
+    position: relative;
+}  
+.recommend_content1L > li > .act-innr > h4{
+    color: #404040;
+    font-size: 12px;
+    line-height: 30px;
+}
+.act-date{
+    font-size: 12px;
+    line-height: 16px;
+    color: #d1ab57;
+    margin: 6px 0 10px;
+}
+.act-date > span{
+    color: #9f9f9f;
+}
+.act-intro{
+    color: #888;
+    font-size: 12px;
+    line-height: 16px;
+}
+/*正文部分结束*/
+#footer{
+    padding: 30px 0;
+    background: url(bg-footer.jpg) no-repeat center top;
+    overflow: hidden;
+}
+#footer_inner{
+    padding-left: 380px;
+    width: 860px;
+    zoom: 1;
+    color: #A5A5A5;
+    margin: 0 auto;
+}
+#footer_list{
+    float: right;
+}
+#footer_list > li{
+    color: #568193;
+    font-size: 12px;
+}
+#footer_list > li > a{
+    color: #568193;
+    font-size: 12px;
+}
+#footer_list > li > span{
+    color: #568193;
+    font-size: 12px;
+}
+
+
+
+
+
+
+
+

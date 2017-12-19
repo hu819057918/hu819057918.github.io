@@ -1,0 +1,1321 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<link rel="bookmark"  type="image/x-icon"  href="/img/logo_miccall.png"/>
+	 <link rel="shortcut icon" href="/img/logo_miccall.png">
+	
+			
+    <title>
+    Hexo
+    </title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="/css/mic_main.css" />
+    <link rel="stylesheet" href="/css/dropdownMenu.css" />
+    
+    	<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+	
+    <noscript>
+        <link rel="stylesheet" href="/css/noscript.css" />
+    </noscript>
+
+			    <script src="/js/jquery.min.js"></script>
+    <script src="/js/jquery.scrollex.min.js"></script>
+    <script src="/js/jquery.scrolly.min.js"></script>
+    <script src="/js/skel.min.js"></script>
+    <script src="/js/util.js"></script>
+    <script src="/js/main.js"></script>
+	
+</head>
+    
+
+<div id="hexo-helper-live2d">
+  <canvas id="live2dcanvas" width="150" height="300"></canvas>
+</div>
+<style>
+  #live2dcanvas{
+    position: fixed;
+    width: 150px;
+    height: 300px;
+    opacity:1;
+    right: 0px;
+    z-index: 999;
+    pointer-events: none;
+    bottom: -20px;
+  }
+</style>
+<script type="text/javascript" src="/live2d/device.min.js"></script>
+<script type="text/javascript">
+const loadScript = function loadScript(c,b){var a=document.createElement("script");a.type="text/javascript";"undefined"!=typeof b&&(a.readyState?a.onreadystatechange=function(){if("loaded"==a.readyState||"complete"==a.readyState)a.onreadystatechange=null,b()}:a.onload=function(){b()});a.src=c;document.body.appendChild(a)};
+(function(){
+  if((typeof(device) != 'undefined') && (device.mobile())){
+    document.getElementById("live2dcanvas").style.width = '75px';
+    document.getElementById("live2dcanvas").style.height = '150px';
+  }else
+    if (typeof(device) === 'undefined') console.error('Cannot find current-device script.');
+  loadScript("/live2d/script.js", function(){loadlive2d("live2dcanvas", "/live2d/assets/tororo.model.json", 0.5);});
+})();
+</script>
+
+		
+<!-- Layouts -->
+
+
+
+<!--  代码渲染  -->
+<link rel="stylesheet" href="/css/prism_coy.css" />
+<link rel="stylesheet" href="/css/typo.css" />
+<!-- 文章页 -->
+<body class="is-loading">
+    <!-- Wrapper 外包 s-->
+    <div id="wrapper" class="fade-in">
+        <!-- Intro 头部显示 s -->
+        <!-- Intro 头部显示 e -->
+        <!-- Header 头部logo start -->
+        <header id="header">
+    <a href="/" class="logo">MICCALL</a>
+</header>
+        <!-- Nav 导航条 start -->
+        <nav id="nav" class="special" >
+            <ul class="menu links" >
+			<!-- Homepage  主页  --> 
+			<li >
+	            <a href="/" rel="nofollow">主页</a>
+	        </li>
+			<!-- categories_name  分类   --> 
+	        
+	        <li class="active">
+	            <a href="#s1">分类</a>
+	                    <ul class="submenu">
+	                        <li>
+	                        
+	                    </ul>
+	        </li>
+	        
+	        <!-- archives  归档   --> 
+	        
+	        
+		        <!-- Pages 自定义   -->
+		        
+		        <li>
+		            <a href="/about/" title="简历">
+		                简历
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/group/" title="团队">
+		                团队
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/gallery/" title="图库">
+		                图库
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/tag/" title="标签">
+		                标签
+		            </a>
+		        </li>
+		        
+
+
+            </ul>
+            <!-- icons 图标   -->
+			<ul class="icons">
+		            
+		                <li><a href="https://github.com/miccall" class="icon fa-github"><span class="label">GitHub</span></a></li>
+		            
+		            
+		            
+		            
+			</ul>
+</nav>
+
+        <div id="main" >
+            <div class ="post_page_title_img" style="height: 25rem;background-image: url();background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;overflow:hidden;" >
+                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2 ></h2></a>
+            </div>
+            <!-- Post -->
+            <div class="typo" style="padding: 3rem;">
+                <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>练习</title>
+    <link rel="stylesheet" href="1.CSS">
+    <script src="https://cdn.bootcss.com/jquery/2.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+<!--外包裹-->
+    <div id="header" onscroll="small()">
+        <div id="top">
+            <div id="top_top">
+<!--LOGO标志-->
+                <div id="logo">
+                    <a href="http://lol.qq.com/" target="_blank" rel="noopener">英雄联盟</a>
+                </div>
+<!--LOGO标志  over-->
+<!--导航-->
+                <ul id="nav">
+                    <li>
+                        <a href="">
+                    游戏资料
+                    <span>GAME INFO</span> 
+                    </a>
+
+                    </li>
+                    <li>
+                        <a href="">
+                    商城/合作
+                    <span>STORE</span> 
+                    </a>
+                    </li>
+                    <li>
+                        <a href="">
+                    用户互动
+                    <span>COMMUNITY</span>
+                    </a>
+                    </li>
+                    <li>
+                        <a href="">
+                    赛事中心
+                    <span>EVENTS</span>
+                    </a>
+                    </li>
+                    <li>
+                        <a href="">
+                     自助系统
+                    <span>SYSTEM</span>
+                    </a>
+                    </li>
+                </ul>
+<!--导航  over-->
+<!--搜索框-->
+                <span id="sousuo">
+                <i></i>
+            </span>
+<!--搜索框  over-->
+<!--顶部APP-->
+                <a id="top_app" href="http://lol.qq.com/app/" target="_blank" title="前往掌上英雄联盟官网">
+               <i></i>
+            </a>
+<!--顶部APP  over-->
+<!--用户部分-->
+                <div id="top_use_info">
+                    <div id="top_use1">
+                        <span></span>
+                        <img src="default.png" alt="">
+                    </div>
+                    <div id="top_use2">
+                        <div id="top_use2_one">
+                            亲爱的召唤师，欢迎
+                            <a href="">登录</a>
+                        </div>
+                        <div id="top_use2_two">
+                            登录后查看自己的战绩、资产、声望值等
+                        </div>
+                    </div>
+                </div>
+<!--用户部分  over-->
+            </div>
+<!--导航衍生部分-->
+            <div id="sub_nav">
+                <ul id="sub_nav_inner">
+                    <li>
+                        <a class="sub_nav_a" href="">新手指导</a>
+                        <a class="sub_nav_a" href="">
+                        <i class="hot"></i>
+                        资料库
+                        </a>
+                        <a class="sub_nav_a" href="">攻略中心</a>
+                        <a class="sub_nav_a" href="">海克斯实验室</a>
+                        <a class="sub_nav_a" href="">海克斯战利品库</a>
+                        <a class="sub_nav_a" href="">屏保下载</a>
+                        <a class="sub_nav_a" href="">
+                        <i class="new"></i>
+                        宇宙官网
+                        </a>
+                    </li>
+                    <li>
+                        <a class="sub_nav_a" href="">点券充值</a>
+                        <a class="sub_nav_a" href="">道聚城</a>
+                        <a class="sub_nav_a" href="">
+                        <i class="hot"></i>
+                        周边商城
+                        </a>
+                        <a class="sub_nav_a" href="">LOL桌游</a>
+                        <a class="sub_nav_a" href="">LOL信用卡</a>
+                        <a class="sub_nav_a" href="">网吧特权</a>
+                    </li>
+                    <li>
+                        <a class="sub_nav_a" href="">在线客服</a>
+                        <a class="sub_nav_a" href="">视频中心</a>
+                        <a class="sub_nav_a" href="">官方论坛</a>
+                        <a class="sub_nav_a" href="">官方微信</a>
+                        <a class="sub_nav_a" href="">官方微博</a>
+                    </li>
+                    <li>
+                        <a class="sub_nav_a" href="">
+                        <i class="new"></i>
+                        全球总决赛
+                        </a>
+                        <a class="sub_nav_a" href="">
+                        <i class="hot"></i>
+                        LPL职业联赛
+                        </a>
+                        <a class="sub_nav_a" href="">德玛西亚杯</a>
+                        <a class="sub_nav_a" href="">城市争霸赛</a>
+                        <a class="sub_nav_a" href="">高校联赛</a>
+                        <a class="sub_nav_a" href="">LDL发展联赛</a>
+                        <a class="sub_nav_a" href="">高校自发赛</a>
+                    </li>
+                    <li>
+                        <a class="sub_nav_a" href="">点亮图标</a>
+                        <a class="sub_nav_a" href="">
+                        <i class="hot"></i>
+                        封号查询
+                        </a>
+                        <a class="sub_nav_a" href="">体验服申请</a>
+                        <a class="sub_nav_a" href="">回放系统</a>
+                        <a class="sub_nav_a" href="">服务器状态查询</a>
+                        <a class="sub_nav_a" href="">裁决之镰</a>
+                        <a class="sub_nav_a" href="">
+                        <i class="new"></i>
+                        峡谷之巅
+                        </a>
+                    </li>
+                </ul>
+            </div>
+<!--导航衍生部分  over-->
+        </div>
+        <div id="top_act">
+            <a id="top_act_link" href="http://lpl.qq.com/es/2017worlds/?ADTAG=lolweb.v2.act" target="_blank"></a>
+            <div id="top_act_version">
+                <span class="banben1">
+                    当前游戏版本：
+                </span>
+                <span class="banben2">
+                    Ver 7.19
+                </span>
+                <a href="">版本详情</a>
+            </div>
+        </div>
+    </div>
+<!--外包裹  over-->
+<!--中间菜单部分-->
+    <div id="menu">
+        <ul id="menu_inner">
+            <li class="menu_one">
+                <a href="">综合资讯</a>
+            </li>
+            <li class="dot"></li>
+            <li class="menu_two">
+                <a href="">视频中心</a>
+            </li>
+            <li class="dot"></li>
+            <li class="menu_thr">
+                <a href="">赛事中心</a>
+            </li>
+            <li class="dot"></li>
+            <li class="menu_fou">
+                <a href="">活动中心</a>
+            </li>
+        </ul>
+    </div>
+<!--中间菜单部分  over-->
+<!--正文部分-->
+    <div id="content">
+        <div id="content_inner">
+            <div id="layout">
+                <div id="home_side">
+                    <!--资讯中心-->
+                    <div id="home_side1">
+                        <!--轮播-->
+                        <div id="promo">
+                            <ul id="pic_one">
+                                <li class="pic_one1">
+                                    <a href="">
+                                   <img src="1.jpg" alt="" width="820px" height="350px">
+                               </a>
+                                </li>
+                                <li class="pic_one1">
+                                    <a href="">
+                                   <img src="2.jpg" alt="" width="820px" height="350px">
+                               </a>
+                                </li>
+                                <li class="pic_one1">
+                                    <a href="">
+                                   <img src="3.jpg" alt="" width="820px" height="350px">
+                               </a>
+                                </li>
+                                <li class="pic_one1">
+                                    <a href="">
+                                   <img src="4.jpg" alt="" width="820px" height="350px">
+                               </a>
+                                </li>
+                                <li class="pic_one1">
+                                    <a href="">
+                                   <img src="5.jpg" alt="" width="820px" height="350px">
+                               </a>
+                                </li>
+                            </ul>
+                            <ul id="pic_two">
+                                <li class="pic_two1" style="background: #303030;color : #e9c06c">
+                                    总决赛卡片收集
+                                </li>
+                                <li class="pic_two1">
+                                    魔法引擎上线
+                                </li>
+                                <li class="pic_two1">
+                                    2018季前赛更新
+                                </li>
+                                <li class="pic_two1">
+                                    荣誉系统
+                                </li>
+                                <li class="pic_two1">
+                                    英雄联盟音乐节
+                                </li>
+                            </ul>
+                        </div>
+<!--侧栏-->
+                        <div id="said_nav">
+                            <div id="side_download">
+
+                                <a href="">
+                                <video src="./down.mp4" type="video/mp4" autoplay loop>
+                                </video>
+                               </a>
+                            </div>
+                            <ul id="side_menu">
+                                <li>
+                                    <a href="">
+                                <i class="side_menu_one">
+                                </i>新手推荐
+                                </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                <i class="side_menu_one">
+                                </i>宇宙官网
+                                </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                <i class="side_menu_one">
+                                </i>周边商城
+                                <i class="hot" style="margin-top: 3px;position: absolute;"></i>
+                                </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                <i class="side_menu_one">
+                                </i>新客户端
+                                <i class="new" style="margin-top: 3px;position: absolute;"></i>
+                                </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                <i class="side_menu_one">
+                                </i>峡谷之巅
+                                <i class="new" style="margin-top: 3px;position: absolute"></i>
+                                </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                <i class="side_menu_one">
+                                </i>CDK兑换
+                                </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                <i class="side_menu_one">
+                                </i>轮换模式
+                                <i class="hot" style="margin-top: 3px;position: absolute"></i>
+                                </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                <i class="side_menu_one">
+                                </i>游戏资料
+                                </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                <i class="side_menu_one">
+                                </i>领奖中心
+                                </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                <i class="side_menu_one">
+                                </i>官方微博
+                                </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                <i class="side_menu_one">
+                                </i>玩家论坛
+                                </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                <i class="side_menu_one">
+                                </i>在线客服
+                                </a>
+                                </li>
+                            </ul>
+                        </div>
+<!--侧栏  over-->
+<!--新闻公告-->
+                        <div id="home_mod_news">
+                            <div id="news_top">
+                                <h3>最新资讯</h3>
+                                <ul id="news_tab">
+                                    <li class="news_tab_l" style="border-bottom: 3px solid #d1ab57;color: #d1ab57;">综合新闻</li>
+                                    <li class="news_tab_l">官方公告</li>
+                                    <li class="news_tab_l">赛事新闻</li>
+                                    <li class="news_tab_l">论坛咨询</li>
+                                </ul>
+                            </div>
+<!--新闻正文部分-->
+<!--第一部分-->
+                             <div id="news_list">
+                                <div class="news_content" style="display: block;">
+                                    <ul>
+                                        <li class="first">
+                                          <a href="/webplat/info/news_version3/152/4579/4580/m3106/201710/647007.shtml?ADTAG=<lola></lola>游戏玩法随想：季前赛的装备调整">
+                                           <img src="pic-news6.jpg" alt="">
+                                           <span class="firstS1">游戏玩法随想：季前赛的装备调整</span>
+                                           <span class="firstS2">除基础属性和技能调整之外，鉴于符文的影响，我们还在尝试改动部分装备。</span>
+                                           </a>
+                                        </li>
+                                        <li class="news_item">
+                                        <a href="" name="news_item_a">
+                                            <span class="f_news_type">
+                                                新闻
+                                            </span>
+                                            10月20日欧洲兔MSF挑战三冠王SKT
+                                            <span class="date">10/19</span>
+                                        </a>
+                                        </li>
+                                        <li class="news_item">
+                                        <a href="" name="news_item_a">
+                                            <span class="f_news_type">
+                                                新闻
+                                            </span>
+                                            传奇永不熄—2017全球总决赛主题曲MV
+                                            <span class="date">10/19</span>
+                                        </a>
+                                        </li>
+                                        <li class="news_item">
+                                        <a href="" name="news_item_a">
+                                            <span class="f_news_type">
+                                                新闻
+                                            </span>
+                                            爆冷！LCK冠军LZ惨遭三星零封出局
+                                            <span class="date">10/19</span>
+                                        </a>
+                                        </li>
+                                        <li class="news_item">
+                                        <a href="" name="news_item_a">
+                                            <span class="f_news_type">
+                                                新闻
+                                            </span>
+                                            教你一招：6分钟轻松上手新版寡妇
+                                            <span class="date">10/19</span>
+                                        </a>
+                                        </li>
+                                        <li class="news_item">
+                                        <a href="" name="news_item_a">
+                                            <span class="f_news_type">
+                                                新闻
+                                            </span>
+                                            10月20日免费英雄更换公告
+                                            <span class="date">10/18</span>
+                                        </a>
+                                        </li>
+                                        <li class="news_item">
+                                        <a href="" name="news_item_a">
+                                            <span class="f_news_type">
+                                                新闻
+                                            </span>
+                                            英雄蓝图：2017年10月版
+                                            <span class="date">10/18</span>
+                                        </a>
+                                        </li>
+                                        <li class="news_item">
+                                        <a href="" name="news_item_a">
+                                           <span class="f_news_type">
+                                               新闻
+                                           </span>
+                                            全球总决赛8强淘汰赛10月19日直播
+                                            <span class="date">10/18</span> 
+                                        </a>
+                                        </li>
+                                        <li class="news_item">
+                                        <a href="" name="news_item_a">
+                                           <span class="f_news_type">
+                                               新闻
+                                           </span>
+                                            银河魔装机神2017皮肤上架公告
+                                            <span class="date">10/18</span> 
+                                        </a>
+                                        </li>
+                                        <li class="news_item">
+                                        <a href="" name="news_item_a">
+                                           <span class="f_news_type">
+                                               新闻
+                                           </span>
+                                            2017英雄联盟音乐节11月3日落地水立方
+                                            <span class="date">10/17</span> 
+                                        </a>
+                                        </li>
+                                        <li class="news_item">
+                                        <a href="" name="news_item_a">
+                                           <span class="f_news_type">
+                                               新闻
+                                           </span>
+                                            全新荣誉系统正式上线
+                                            <span class="date">10/17</span> 
+                                        </a>
+                                        </li>
+                                    </ul>
+                                </div>
+<!--第二部分-->
+                                <div class="news_content" style="display: none">
+                                   
+                                    <ul>
+                                        <li class="first">
+                                          <a href="http://lol.qq.com/webplat/info/news_version3/152/4579/4581/m3106/201710/645843.shtml?ADTAG=lolweb.v2.home>游戏玩法随想：季前赛的装备调整" target="_blank">
+                                           <img src="pic-news1.jpg" alt="">
+                                           <span class="firstS1">荣誉系统上线公告</span>
+                                           <span class="firstS2">我们将在本周内逐步打开荣誉系统。</span>
+                                           </a>
+                                        </li>
+                                        <li class="news_item">
+                                        <a href="" name="news_item_a">
+                                            <span class="f_news_type">
+                                                公告
+                                            </span>
+                                            传奇之路活动开启 100%必抽未拥有道具
+                                            <span class="date">10/19</span>
+                                        </a>
+                                        </li>
+                                        <li class="news_item">
+                                        <a href="" name="news_item_a">
+                                            <span class="f_news_type">
+                                                公告
+                                            </span>
+                                            10月20日免费英雄更换公告
+                                            <span class="date">10/19</span>
+                                        </a>
+                                        </li>
+                                        <li class="news_item">
+                                        <a href="" name="news_item_a">
+                                            <span class="f_news_type">
+                                                公告
+                                            </span>
+                                            部分电信大区网络波动公告
+                                            <span class="date">10/19</span>
+                                        </a>
+                                        </li>
+                                        <li class="news_item">
+                                        <a href="" name="news_item_a">
+                                            <span class="f_news_type">
+                                                公告
+                                            </span>
+                                            银河魔装机神2017皮肤上架公告
+                                            <span class="date">10/19</span>
+                                        </a>
+                                        </li>
+                                        <li class="news_item">
+                                        <a href="" name="news_item_a">
+                                            <span class="f_news_type">
+                                                公告
+                                            </span>
+                                            伊芙琳英雄及皮肤半价公告
+                                            <span class="date">10/18</span>
+                                        </a>
+                                        </li>
+                                        <li class="news_item">
+                                        <a href="" name="news_item_a">
+                                            <span class="f_news_type">
+                                                公告
+                                            </span>
+                                            10月17日凌晨4点版本停机更新公告
+                                            <span class="date">10/18</span>
+                                        </a>
+                                        </li>
+                                        <li class="news_item">
+                                        <a href="" name="news_item_a">
+                                           <span class="f_news_type">
+                                               公告
+                                           </span>
+                                            部分电信大区网络波动公告
+                                            <span class="date">10/18</span> 
+                                        </a>
+                                        </li>
+                                        <li class="news_item">
+                                        <a href="" name="news_item_a">
+                                           <span class="f_news_type">
+                                               公告
+                                           </span>
+                                            10月14日英雄皮肤限时5折
+                                            <span class="date">10/18</span> 
+                                        </a>
+                                        </li>
+                                        <li class="news_item">
+                                        <a href="" name="news_item_a">
+                                           <span class="f_news_type">
+                                               公告
+                                           </span>
+                                            英雄联盟电视台战队弹幕功能开启公告
+                                            <span class="date">10/17</span> 
+                                        </a>
+                                        </li>
+                                        <li class="news_item">
+                                        <a href="" name="news_item_a">
+                                           <span class="f_news_type">
+                                               公告
+                                           </span>
+                                            来自拳头游戏创始人的公开信
+                                            <span class="date">10/17</span> 
+                                        </a>
+                                        </li>
+                                    </ul>
+                                </div>
+<!--第三部分-->
+                            <div class="news_content" style="display: none">
+                                   
+                                    <ul>
+                                        <li class="first">
+                                          <a href="http://lpl.qq.com/es/video_detail.shtml?nid=15635>游戏玩法随想：季前赛的装备调整" target="_blank">
+                                           <img src="pic-news2.jpg" alt="">
+                                           <span class="firstS1">2017全球总决赛WE vs C9赛后视频</span>
+                                           <span class="firstS2"></span>
+                                           </a>
+                                        </li>
+                                        <li class="news_item">
+                                        <a href="" name="news_item_a">
+                                            <span class="f_news_type">
+                                                赛事
+                                            </span>
+                                            WE挺进四强！半决赛LPL与LCK殊死一战
+                                            <span class="date">10/19</span>
+                                        </a>
+                                        </li>
+                                        <li class="news_item">
+                                        <a href="" name="news_item_a">
+                                            <span class="f_news_type">
+                                                赛事
+                                            </span>
+                                            恭喜WE力克C9！队史首入总决赛四强
+                                            <span class="date">10/19</span>
+                                        </a>
+                                        </li>
+                                        <li class="news_item">
+                                        <a href="" name="news_item_a">
+                                            <span class="f_news_type">
+                                                赛事
+                                            </span>
+                                            部分电信大区网络波动公告
+                                            <span class="date">10/19</span>
+                                        </a>
+                                        </li>
+                                        <li class="news_item">
+                                        <a href="" name="news_item_a">
+                                            <span class="f_news_type">
+                                                赛事
+                                            </span>
+                                            传奇TOP10：xiye十大暴力输出
+                                            <span class="date">10/19</span>
+                                        </a>
+                                        </li>
+                                        <li class="news_item">
+                                        <a href="" name="news_item_a">
+                                            <span class="f_news_type">
+                                                赛事
+                                            </span>
+                                            WE杀手锏 疯狂Carry全靠她们！
+                                            <span class="date">10/18</span>
+                                        </a>
+                                        </li>
+                                        <li class="news_item">
+                                        <a href="" name="news_item_a">
+                                            <span class="f_news_type">
+                                                赛事
+                                            </span>
+                                            Uzi图奇洞悉战局绕后1喷5
+                                            <span class="date">10/18</span>
+                                        </a>
+                                        </li>
+                                        <li class="news_item">
+                                        <a href="" name="news_item_a">
+                                           <span class="f_news_type">
+                                               赛事
+                                           </span>
+                                            扎心！Rekkles泪洒赛场不愿离开
+                                            <span class="date">10/18</span> 
+                                        </a>
+                                        </li>
+                                        <li class="news_item">
+                                        <a href="" name="news_item_a">
+                                           <span class="f_news_type">
+                                               赛事
+                                           </span>
+                                            RNG全队发挥出色 惊天翻盘成功晋级
+                                            <span class="date">10/18</span> 
+                                        </a>
+                                        </li>
+                                        <li class="news_item">
+                                        <a href="" name="news_item_a">
+                                           <span class="f_news_type">
+                                               赛事
+                                           </span>
+                                            RNG力克FNC LPL时隔1111天再进四强
+                                            <span class="date">10/17</span> 
+                                        </a>
+                                        </li>
+                                        <li class="news_item">
+                                        <a href="" name="news_item_a">
+                                           <span class="f_news_type">
+                                               赛事
+                                           </span>
+                                            中野完美配合 Uzi小炮连跳成功翻盘
+                                            <span class="date">10/17</span> 
+                                        </a>
+                                        </li>
+                                    </ul>
+                             </div>
+<!--第四部分-->
+                            <div class="news_content" style="display: none">
+                                    <ul>
+                                        <li class="first">
+                                          <a href="http://lpl.qq.com/es/video_detail.shtml?nid=15635>游戏玩法随想：季前赛的装备调整" target="_blank">
+                                           <img src="pic-news5.jpg" alt="">
+                                           <span class="firstS1">【问拳头第44期】重获荣誉与天梯</span>
+                                           <span class="firstS2">
+                                               本周的话题有关如何重新获得荣誉等级，怪兽入侵模式的新消息、蓝色精粹以及摆脱钻五（或任何分段天梯瓶颈的建议）。
+                                           </span>
+                                           </a>
+                                        </li>
+                                        <li class="news_item">
+                                        <a href="" name="news_item_a">
+                                            <span class="f_news_type">
+                                                论坛
+                                            </span>
+                                            【招募】英雄联盟游戏客服（成都）招募
+                                            <span class="date">10/19</span>
+                                        </a>
+                                        </li>
+                                        <li class="news_item">
+                                        <a href="" name="news_item_a">
+                                            <span class="f_news_type">
+                                                论坛
+                                            </span>
+                                            无法驾驭？LOL最需要手速的英雄
+                                            <span class="date">10/19</span>
+                                        </a>
+                                        </li>
+                                        <li class="news_item">
+                                        <a href="" name="news_item_a">
+                                            <span class="f_news_type">
+                                                论坛
+                                            </span>
+                                            与职业选手较量！峡谷之巅阵容英雄推荐
+                                            <span class="date">10/19</span>
+                                        </a>
+                                        </li>
+                                        <li class="news_item">
+                                        <a href="" name="news_item_a">
+                                            <span class="f_news_type">
+                                                论坛
+                                            </span>
+                                            【话题】万圣节新皮肤原画曝光
+                                            <span class="date">10/19</span>
+                                        </a>
+                                        </li>
+                                        <li class="news_item">
+                                        <a href="" name="news_item_a">
+                                            <span class="f_news_type">
+                                                论坛
+                                            </span>
+                                            猜谁能拔得头筹，皮肤、QB等你来拿！
+                                            <span class="date">10/18</span>
+                                        </a>
+                                        </li>
+                                        <li class="news_item">
+                                        <a href="" name="news_item_a">
+                                            <span class="f_news_type">
+                                                论坛
+                                            </span>
+                                            不要小看皮肤，有的皮肤很贱很贱
+                                            <span class="date">10/18</span>
+                                        </a>
+                                        </li>
+                                        <li class="news_item">
+                                        <a href="" name="news_item_a">
+                                           <span class="f_news_type">
+                                               论坛
+                                           </span>
+                                            LOL不止有奶妈，其实奶爸也有奶水
+                                            <span class="date">10/18</span> 
+                                        </a>
+                                        </li>
+                                        <li class="news_item">
+                                        <a href="" name="news_item_a">
+                                           <span class="f_news_type">
+                                               论坛
+                                           </span>
+                                            【防坑大指南】10月20日周免攻略
+                                            <span class="date">10/18</span> 
+                                        </a>
+                                        </li>
+                                        <li class="news_item">
+                                        <a href="" name="news_item_a">
+                                           <span class="f_news_type">
+                                               论坛
+                                           </span>
+                                            八强首日LCK内战，SSG能否逆袭LZ
+                                            <span class="date">10/17</span> 
+                                        </a>
+                                        </li>
+                                        <li class="news_item">
+                                        <a href="" name="news_item_a">
+                                           <span class="f_news_type">
+                                               论坛
+                                           </span>
+                                            亚索师徒死了都要爱，卢锡安才是联盟老司机
+                                            <span class="date">10/17</span> 
+                                        </a>
+                                        </li>
+                                    </ul>
+                             </div>
+                             <a id="news_more" href="">
+                                 阅读更多
+                                 <em>最新资讯</em>
+                             </a>
+                        </div>
+                    </div>
+<!--新闻公告  over-->
+<!--英雄、皮肤部分-->
+                        <div id="home-mod_hero">
+                            <div id="hd">
+                                <ul id="J_heroTab">
+                                    <li class="current" style="color: #d1ab57;border-bottom: 3px solid #d1ab57">周免英雄</li>
+                                    <li class="current">最新皮肤</li>
+                                    <li class="current">最新英雄</li>
+                                </ul>
+                            </div>
+                            <div id="bd">
+                                <div class="hero_picture">
+                                    <div id="hero_picture_list">
+                                        <a title="九尾妖狐 阿狸" href="" target="_blank">
+                                          <img src="Ahri.jpg" alt="">  
+                                        </a>
+                                        <a title="复仇焰魂 布兰德" href="" target="_blank">
+                                          <img src="Brand.jpg" alt="">  
+                                        </a>
+                                        <a title="皮城女警 凯特琳" href="" target="_blank">
+                                          <img src="Caitlyn.jpg" alt="">  
+                                        </a>
+                                        <a title="诺克萨斯之手 德莱厄斯" href="" target="_blank">
+                                          <img src="Darius.jpg" alt="">  
+                                        </a>
+                                        <a title="探险家 伊泽瑞尔" href="" target="_blank">
+                                          <img src="Ezreal.jpg" alt="">  
+                                        </a>
+                                        <a title="风暴之怒 迦娜" href="" target="_blank">
+                                          <img src="Janna.jpg" alt="">  
+                                        </a>
+                                        <a title="盲僧 李青" href="" target="_blank">
+                                          <img src="LeeSin.jpg" alt="">  
+                                        </a>
+                                        <a title="熔岩巨兽 墨菲特" href="" target="_blank">
+                                          <img src="Malphite.jpg" alt="">  
+                                        </a>
+                                        <a title="无极剑圣 易" href="" target="_blank">
+                                          <img src="MasterYi.jpg" alt="">  
+                                        </a>
+                                        <a title="唤潮鲛姬 娜美" href="" target="_blank">
+                                          <img src="Nami.jpg" alt="">  
+                                        </a>
+                                        <div id="free_bottom">
+                                           <span id="free_bottom1">
+                                               <i></i>
+                                           </span>
+                                           <span id="free_bottom2">
+                                              免费时间：2017-10-20 至 2017-10-27 
+                                           </span>     
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="bottom_go">
+                                <a class="go-qt" href="">
+                                    <img src="pic-go-qt.jpg" alt="">
+                                </a>
+                                <a class="go-mall" href="">
+                                    <img src="pic-go-mall.jpg" alt="">
+                                </a>
+                            </div>
+                            <div id="side_18">
+                                <i></i>
+                                <h5>本游戏适合18岁（含）以上玩家娱乐</h5>
+                                <p>
+                                    抵制不良游戏 拒绝盗版游戏 注意自我保护 谨防受骗上当
+                                    <br>
+                                    适度游戏益脑 沉迷游戏伤身 合理安排时间 享受健康生活
+                                </p>
+                            </div>
+                        </div>
+<!--英雄、皮肤部分  over-->
+<!--最新推荐-->
+                        <div id="home_mod_recommend">
+                            <div id="recommend_top">
+                               <h3>最新推荐</h3>
+                               <ul>
+                                   <li class="recommend_top_l" style="color: #d1ab57;font-weight: bold;border-bottom: 3px solid #d1ab57;">视频推荐</li>
+                                   <li class="recommend_top_l">活动推荐</li>
+                               </ul> 
+                            </div>
+                            <div id="recommend_content">
+                                <div class="recommend_content1">
+                                    <ul class="recommend_content1U">
+                                        <li>
+                                            <a class="pv_lnk" href="">
+                                                <img src="0.jpg" alt="">
+                                                <span class="pv_lnk1"></span>
+                                                <span class="pv_lnk2"></span>
+                                                <span class="show1">
+                                                    <i>11:14</i>
+                                                </span>
+                                                <h5>每日撸报10.23：洞主我到底是大腿还是腿毛</h5>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="pv_lnk" href="">
+                                                <img src="01.jpg" alt="">
+                                                <span class="pv_lnk1"></span>
+                                                <span class="pv_lnk2"></span>
+                                                <span class="show1">
+                                                    <i>04:21</i>
+                                                </span>
+                                                <h5>全输出AD上单狗头！爆炸伤害一Q一脆皮</h5>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="pv_lnk" href="">
+                                                <img src="02.jpg" alt="">
+                                                <span class="pv_lnk1"></span>
+                                                <span class="pv_lnk2"></span>
+                                                <span class="show1">
+                                                    <i>00:14</i>
+                                                </span>
+                                                <h5>蒸汽机器人新皮肤—侠盗枪骑（暂译）</h5>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="pv_lnk" href="">
+                                                <img src="03.jpg" alt="">
+                                                <span class="pv_lnk1"></span>
+                                                <span class="pv_lnk2"></span>
+                                                <span class="show1">
+                                                    <i>00:28</i>
+                                                </span>
+                                                <h5>蒸汽机器人新皮肤—侠盗枪骑、典范枪骑（暂译）</h5>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="pv_lnk" href="">
+                                                <img src="04.jpg" alt="">
+                                                <span class="pv_lnk1"></span>
+                                                <span class="pv_lnk2"></span>
+                                                <span class="show1">
+                                                    <i>08:17</i>
+                                                </span>
+                                                <h5>《赛事比比叨》第一期：揭秘八强赛两大神秘力量，LPL携手挺进4强</h5>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="pv_lnk" href="">
+                                                <img src="05.jpg" alt="">
+                                                <span class="pv_lnk1"></span>
+                                                <span class="pv_lnk2"></span>
+                                                <span class="show1">
+                                                    <i>02:33</i>
+                                                </span>
+                                                <h5>S8季前赛精彩TOP5：掠食者人马破千移速狂飙三杀</h5>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <a id="recommend_more" href="">
+                                        浏览更多
+                                        <em>视频内容</em>
+                                    </a>
+                                </div>
+                                <div class="recommend_content1" style="display: none">
+                                    <ul class="recommend_content1L">
+                                        <li>
+                                        <a href="">
+                                            <img src="lol_1507776957_sSmallImgUrl.jpg" alt="">
+                                            <span class="act_num">
+                                                已有
+                                                <strong class="act_num_s">13175742</strong>
+                                                人关注
+                                            </span>
+                                            <span class="act_times">
+                                                10天后结束
+                                            </span>
+                                        </a>
+                                        <div class="act-innr">
+                                            <h4>电竞主题同人征稿大赛 应援全球总决赛</h4>
+                                            <p class="act-date">
+                                             活动时间 : 
+                                             <span>2017-09-23~2017-10-30
+                                             </span>
+                                            </p>
+                                            <p class="act-intro">用画作为喜爱的战队和选手加油，赢取多重好礼！</p>
+                                        </div>
+                                        </li>
+                                        <li>
+                                        <a href="">
+                                            <img src="lol_1506765465_sSmallImgUrl.jpg" alt="">
+                                            <span class="act_num">
+                                                已有
+                                                <strong class="act_num_s">1126429</strong>
+                                                人关注
+                                            </span>
+                                            <span class="act_times">
+                                                10天后结束
+                                            </span>
+                                        </a>
+                                        <div class="act-innr">
+                                            <h4>英雄，传奇之路</h4>
+                                            <p class="act-date">
+                                             活动时间 : 
+                                             <span>2017-09-30~2017-11-05
+                                             </span>
+                                            </p>
+                                            <p class="act-intro">收集传奇卡片 解锁精美奖励</p>
+                                        </div>
+                                        </li>
+                                        <li>
+                                        <a href="">
+                                            <img src="lol_1506765051_sSmallImgUrl.jpg" alt="">
+                                            <span class="act_num">
+                                                已有
+                                                <strong class="act_num_s">17065308</strong>
+                                                人关注
+                                            </span>
+                                            <span class="act_times">
+                                                9天后结束
+                                            </span>
+                                        </a>
+                                        <div class="act-innr">
+                                            <h4>2017全球总决赛电竞文学大赛</h4>
+                                            <p class="act-date">
+                                             活动时间 : 
+                                             <span>2017-09-10~2017-11-04
+                                             </span>
+                                            </p>
+                                            <p class="act-intro">总决赛门票、礼包、万元奖金奉上！</p>
+                                        </div>
+                                        </li>
+                                        <li>
+                                        <a href="">
+                                            <img src="lol_1506760642_sSmallImgUrl.jpg" alt="">
+                                            <span class="act_num">
+                                                已有
+                                                <strong class="act_num_s">1970648</strong>
+                                                人关注
+                                            </span>
+                                            <span class="act_times" style="background: #c8c8c8;">
+                                                已结束
+                                            </span>
+                                        </a>
+                                        <div class="act-innr">
+                                            <h4>国庆中秋双节回馈</h4>
+                                            <p class="act-date">
+                                             活动时间 : 
+                                             <span>2017-09-30~2017-10-08
+                                             </span>
+                                            </p>
+                                            <p class="act-intro">广寒仙子限定皮肤限时销售，终极皮肤限时折扣</p>
+                                        </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                    </div>
+                        
+<!--最新推荐  over-->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--正文部分  over-->
+<!--结尾部分-->
+    <div id="footer">
+        <div id="footer_inner">
+            <ul id="footer_list">
+                <li id="footer_list1">
+                    <a href="">腾讯互动娱乐</a>
+                    <span>|</span>
+                    <a href="">服务条款</a>
+                    <span>|</span>
+                    <a href="">广告服务</a>
+                    <span>|</span>
+                    <a href="">腾讯游戏招聘</a>
+                    <span>|</span>
+                    <a href="">腾讯游戏客服</a>
+                    <span>|</span>
+                    <a href="">游戏活动</a>
+                    <span>|</span>
+                    <a href="">游戏地图</a>
+                    <span>|</span>
+                    <a href="">商务合作</a>
+                    <span>|</span>
+                    <a href="">腾讯网</a>
+                    <span>|</span>
+                    <a href="">网站导航</a>
+                </li>
+                <li>
+                    <a href="">腾讯公司版权所有</a>
+                </li>
+                <li>
+                    COPYRIGHT © 1998 - 2017 TENCENT. ALL RIGHTS RESERVED.
+                </li>
+                <li>
+                    © 2012 Riot Games, Inc. ALL RIGHTS RESERVED.
+                </li>
+                <li>
+                    文网进字[2011] 004号 & ISBN 978-7-89989-145-2
+                    <span>|</span>
+                    <a href="">新出网证（粤）字010号</a>
+                    <span>|</span>
+                    <a href="">粤网文【2017】6138-1456号</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+<!--结尾部分  over-->
+
+    <script src="1.js"></script>
+</body>
+
+</html>
+            </div>
+
+            <!-- Post Comments -->
+            
+    <!-- 使用 DISQUS_CLICK -->
+<div id="disqus-comment">
+    <div id="disqus_thread"></div>
+
+<!-- add animation -->
+<style>
+	.disqus_click_btn {
+            line-height: 30px;
+            margin: 0;
+            min-width: 50px;
+            padding: 0 14px;
+            display: inline-block;
+            font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 0;
+            overflow: hidden;
+            will-change: box-shadow;
+            transition: box-shadow .2s cubic-bezier(.4, 0, 1, 1), background-color .2s cubic-bezier(.4, 0, .2, 1), color .2s cubic-bezier(.4, 0, .2, 1);
+            outline: 0;
+            cursor: pointer;
+            text-decoration: none;
+            text-align: center;
+            vertical-align: middle;
+            border: 0;
+            background: rgba(158, 158, 158, .2);
+            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+            color: #fff;
+            background-color: #7EC0EE;
+            text-shadow: 0
+        }
+</style>
+	
+<div class="btn_click_load" id="disqus_bt"> 
+    <button class="disqus_click_btn">点击查看评论</button>
+</div>
+
+<!--
+<script type="text/javascript">
+$('.btn_click_load').click(function() {
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'http-miccall-tech'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+
+    document.getElementById('disqus_bt').style.display = "none";
+});
+</script>
+-->
+<script type="text/javascript">
+    var disqus_config = function () {
+        this.page.url = 'http://yoursite.com/demo/LOL/1.html';  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = 'http://yoursite.com/demo/LOL/1.html'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+</script>
+
+<script type="text/javascript">
+    $('.btn_click_load').click(function() {  //click to load comments
+        (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document;
+            var s = d.createElement('script');
+            s.src = '//http-miccall-tech.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', + new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+        $('.btn_click_load').css('display','none');
+    });
+</script>
+</div>
+<style>
+    #disqus-comment{
+        background-color: #eee;
+        padding: 2pc;
+    }
+</style>
+
+
+        </div>
+        <!-- Copyright 版权 start -->
+                <div id="copyright">
+            <ul>
+                <li>&copy;Powered By <a href="https://hexo.io/zh-cn/" style="border-bottom: none;">hexo</a></li>
+                <li>Design: <a href="http://miccall.tech " style="border-bottom: none;">miccall</a></li>
+            </ul>
+            
+            	<span id="busuanzi_container_site_pv">2017总访问量<span id="busuanzi_value_site_pv"></span>次</span>
+			
+        </div>
+    </div>
+</body>
+
+
+
+ 	
+</html>
